@@ -1,0 +1,13 @@
+{
+  "id": "testclient2",
+  "acl": [
+    [
+      "testpartner",
+      "allow"
+    ],
+    [
+      "all",
+      "deny"
+    ]
+  ]
+}

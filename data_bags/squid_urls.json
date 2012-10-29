@@ -1,0 +1,6 @@
+{
+  "id": "testpartner",
+  "urls": [
+        "^http://testpartner/index.html"
+  ]
+}
