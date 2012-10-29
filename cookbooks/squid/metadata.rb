@@ -1,5 +1,5 @@
-maintainer       "Opscode, Inc."
-maintainer_email "matt@opscode.com"
+maintainer       "ABC Teknologies."
+maintainer_email "vovan@vovans.com"
 license          "Apache 2.0"
 description      "Installs/Configures squid as a simple caching proxy"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
