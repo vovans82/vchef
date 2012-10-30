@@ -9,8 +9,7 @@
   "chef_type": "role",
   "run_list": [
    "recipe[hosts]",
-   "recipe[yum]",
-   "recipe[yumrepo]"
+   "recipe[users::sysadmins]"
   ],
   "env_run_lists": {
   }

@@ -53,7 +53,9 @@ version = node['squid']['version']
 Chef::Log.info "Squid version number (unknown if blank): #{version}"
 
 template "/etc/squid/squid.conf" do
-  source "squid#{version}.conf.erb"
+  source "squid.conf.erb"
+  owner "root"
+  group "squid"
   notifies :reload, "service[squid]"
   mode 00644
 end
