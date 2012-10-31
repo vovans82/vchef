@@ -1,0 +1,20 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+<% @zonefiles.each do |conf| -%>
+zone "<%= conf["domain"] %>" IN {
+  type <%= conf["type"] %>;
+  file "<%= conf["domain"] %>";
+  allow-transfer {
+  <% conf["allow_transfer"].each do |ip| -%>
+    <%= ip %>;
+  <% end %>
+  };
+};
+
+<% end %>
