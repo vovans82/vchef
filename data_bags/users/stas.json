@@ -1,0 +1,16 @@
+    {
+      "id": "stas",
+      "ssh_keys": [
+        "ssh-dss AAAAB3NzaC1kc3MAAACBANcYVdiEO5U4kdY1olwreZ9Hc63r/MaPXgaziEd25sN0qVtqsUrQxRBgosq1NFv00YVUq7LWkP2D7CpagfkZzbrBn1t2IX/bUoec1dAS7BGChORAfGTqKsp/mP4mPVL6vGp2DRy3qgzYDUxJdk6aQcywGI5wZHb324Qvqj7zuWv/AAAAFQDm9JTQ2NEb7lXaXdiMxaYCHLD5gwAAAIAXXxMYfqW53cJ9Ha6icLwYVeP0yBM+fOGwvlsxcGuGhVMhCN8Npz+BPUOVZh9C6IMXj3BAwCBNnkHs141AJtjhVx0536ySqClxrK+NPAwTTG6qSa3GasLoKArsL4alIyVAWWUvj6FQUcGTGu1nYylWxghQkeXnFSv6sT+06YGnwAAAAIEAsd6tQwVcKd4c7dVuxdVqNvaP9rvl9+prjHFuOvig9vK6f6w617SJ0i5elj5MbkX9Zd6rr3rx+TWieByh+gPGHRmQTVJRLZWwlW4D2rlE0ts648MswPHYcngVLrsoutxpGKagprdwS1n/14ST41wGIBM+Bkpsy1Zjjq4fGK1Kt/Q= Stas"
+	],
+      "password": "",
+      "groups": "dev",
+      "uid": 2032,
+      "gid": 2032,
+      "name": "Stas Khirman",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee Ops Staff",
+      "nagios": {
+        "email": "stas@choochee.com"
+      }
+    }

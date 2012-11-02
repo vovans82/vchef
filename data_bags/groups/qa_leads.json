@@ -1,0 +1,10 @@
+{
+    "id"      : "qa_leads",
+    "gid"     : 20032,
+    "members" : [
+	  "subbu"
+	, "aleks"
+	, "yiftach"
+	, "timur"
+    ]
+}

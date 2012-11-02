@@ -1,0 +1,16 @@
+{
+  "name": "namenode",
+  "description": "Namenode role for Hadoop",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[hadoop::namenode]",
+    "recipe[ganglia]"
+  ],
+  "env_run_lists": {
+  }
+}

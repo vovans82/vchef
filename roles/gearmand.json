@@ -1,0 +1,15 @@
+{
+  "name": "gearmand",
+  "description": "Gearman Monitoring server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[gearman::gearmand]"
+  ],
+  "env_run_lists": {
+  }
+}

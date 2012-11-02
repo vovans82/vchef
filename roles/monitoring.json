@@ -1,0 +1,19 @@
+{
+  "name": "monitoring",
+  "description": "Monitoring server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "nagios": {
+      "server_auth_method": "htauth"
+    }
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[nprime]",
+    "recipe[nagios::server]"
+  ],
+  "env_run_lists": {
+  }
+}

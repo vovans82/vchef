@@ -1,0 +1,17 @@
+{
+  "name": "rs33",
+  "description": "RackSpace",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "rs33"
+  },
+  "override_attributes": {
+    "location": "rs33"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

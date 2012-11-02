@@ -1,0 +1,7 @@
+dn: cn=<%= @group %>,ou=Groups,dc=choochee,dc=com
+objectclass: groupofnames
+cn: <%= @group %>
+description: <%= @group %> group
+<% @members.each do |member| %>
+member: cn=<%= member %>,ou=People,dc=choochee,dc=com
+<% end %>

@@ -1,0 +1,8 @@
+{
+  "id": "devinf",
+  "ws_hostname": "ws001.rs2.devinf.choochee.com:8080",
+  "xmpp_hostname": "msg.devinf.choochee.com",
+  "provision": "provdevinf.choochee.com",
+  "ws_static_hostname" : "cws.preprod.choochee.com",
+  "central_did": "false"
+}

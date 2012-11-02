@@ -1,0 +1,21 @@
+    {
+      "id": "arun",
+      "ssh_keys": [
+        "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAqT6Ozae+J++zTg/EYx9yhG2PgwpXqW5MY6LoDwdEjn41NZG6iKEn8ZcDSR6Q/sNCDpS7oQnS00WNL2Fdj5bx7QBJgViCWR0EBnVIkF+PkyVGfc146h8BolwETixeFo4aV4k0lOP/vNqn/jCycx/vl8j3jaEg2ZmTwaIkbrAuulZgVhbX4xPZ1MKB6Bv7bblzpuQ1LLFe0KbTBF2MY8Y+Bw6vNrH7I85ZfvVitpWP+jorh/R8UkLfe1hwD9VXusvXdDWaTnZRRH4RmscPIpkmxZpwaQfhxDvPe5QX3U3qDUODijDpKLjfBMeu6zOgRb7X0eR5fm80aNyhXeBaHLaJLw== arun@macbook.choochee.com"
+        ],
+      "password": "vgvhAOAxG9EFI",
+      "groups": "ops",
+      "uid": 2508,
+      "gid": 2508,
+      "name": "Arun Sirimalla",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee Ops Staff",
+      "nagios": {
+        "email": "arun@choochee.com",
+        "mobile": { 
+          "phone": "5109387608",
+          "provider": "att" },
+        "on_call": "true"
+
+      }
+    }

@@ -1,0 +1,17 @@
+{
+  "name": "opslon",
+  "description": "ops deployment",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "opslon"
+  },
+  "override_attributes": {
+    "location": ""
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "namenode",
+  "comment": "ports for hadoop namenode",
+  "proto": {
+	"tcp": [
+		"8020",
+		"50070",
+		"54310",
+		"54311"
+	],
+	"udp": [
+		"8020"
+	]
+  }
+}

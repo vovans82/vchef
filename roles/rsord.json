@@ -1,0 +1,17 @@
+{
+  "name": "rsord",
+  "description": "RackSpace ORD",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "rsord"
+  },
+  "override_attributes": {
+    "location": "rsord"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

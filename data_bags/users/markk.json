@@ -1,0 +1,18 @@
+    {
+      "id": "markk",
+      "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAvNUeXa6WjX9l9Z5tQZvCgOgLUBYVV7fWM/A/iTYU9uNw0dQ9et4ty4JD+7uY1Ss/C9Ir7KOkPjOl0YLuGa5oH0hJRUsHf6LbLaQJAML2/p8Po0o+5fFGRibxHD4TJfwktEJ/lifIwj4z3W/+MxG/sTvLwWOJU+7W1/69A1yfXefES6UmPh4+EDs9D/eNYmQ4gkoJMo3gbL0Yob/UVF+gWXi2TKA182QgLLx6hR0YLbITXhuXRC3o+CSUxXRZo4l/yb/+h7Bje4A7n7YNgvPTreVYAHM1UAljz8fqtBnVWheFIAJnPdtM6C/zmnEkjqY06BXKcef1U46ji5hWXGLrEQ== mark@mark-desktop"
+	],
+###       "password": "$1$hZtk0PCj$q5vHUPV09NTJpv2qSdf8S/",
+      password: ="nopassword",
+      "groups": "dev",
+      "uid": 2018,
+      "gid": 2018,
+      "name": "Mark Kerzner",
+###       "shell": "\/bin\/bash",
+      "shell": "\/sbin\/nologin",
+      "comment": "ChooChee Ops Staff",
+      "nagios": {
+        "email": "markk@choochee.com"
+      }
+    }

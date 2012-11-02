@@ -1,0 +1,17 @@
+{
+  "name": "lon123",
+  "description": "lon deployment",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "lon123"
+  },
+  "override_attributes": {
+    "location": "LON"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "chef-server",
+  "description": "Chef Server Role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "chef_server": {
+      "webui_enabled": true,
+      "workers": 8
+    }
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[chef-server::rubygems-install]",
+    "recipe[chef-server::nginx-proxy]",
+    "recipe[chef-server::cron]",
+    "recipe[chef-server::keys]",
+    "recipe[chef-server::scripts]"
+  ],
+  "env_run_lists": {
+  }
+}

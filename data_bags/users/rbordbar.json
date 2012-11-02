@@ -1,0 +1,16 @@
+    {
+      "id": "rbordbar",
+      "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIBy/kzpwQATLKamW3viQe93D1ogUOe76Xztn270pK2IvOn2hTGpN7cO/bzG/LsjEmWW92WITqMlj/RseYiz5vX9uy8XfFlnBMEaM4xja1dNSx7sNgTV4GuLFoN13QdsNiNO0JPq2ImffFFzQXgPHzjYYAj6NS7zLA6LPgMcJ09JMQ== rsa-key-20120925 "
+	],
+      "password": "$1$T3Eetim1$NU8TooZVjitIvFIP3F.4w.",
+      "groups": "qa",
+      "uid": 2568,
+      "gid": 2568,
+      "name": "Roshanak Bordbar",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee QA Staff",
+      "nagios": {
+        "email": "null@choochee.com"
+      }
+    }

@@ -1,0 +1,17 @@
+{
+  "name": "datanode",
+  "description": "Datanode role for Hadoop",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[hadoop::datanode]",
+    "recipe[webservices::system_properties_rpm]",
+    "recipe[ganglia]"
+  ],
+  "env_run_lists": {
+  }
+}

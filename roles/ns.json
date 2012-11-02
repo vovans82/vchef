@@ -1,0 +1,17 @@
+{
+  "name": "ns",
+  "description": "Nameserver Role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "ns_type": "server"
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[bind]",
+    "role[ntpserver]"
+  ],
+  "env_run_lists": {
+  }
+}

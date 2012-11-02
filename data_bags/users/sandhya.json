@@ -1,0 +1,16 @@
+    {
+      "id": "sandhya",
+      "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA5/tnzh/FjXmm4pRsfb887HoW9uB7GCgfcBT0Of3+it+Cp+DZhxm5fEH86UtiT7GQNhApaah5BoYgEtJiVvVugo7dupvaFC6xYHk8P9EYoLbck5HyTE2v5PYjmJjdeAITZLMBEV0pvH67senOWFthuRrw9cFp7zXjKGEDvk68ADmiTGXEGkpWMcHNHT6t4YjnsZeGgHY3PfLpwOoi6TgvhKqg306zawpN/xaZxGJdJK5IiTPm5hVLSnyCkPttYKlvkFaRdcJZNzOWKVtteJEhKj2fjAd5Xk4ManDl7swf1Sp+lmSOut7ESyJw6fm4dr+QMHvr1K2JHK1UfjAqF+Q5Jw== sandhya 2011-04-11"
+	],
+      "password": "QHqkwchvwitzg",
+      "groups": "dev",
+      "uid": 2299,
+      "gid": 2299,
+      "name": "Sandhya Jaideep",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee Dev Staff",
+      "nagios": {
+        "email": "sandhya@choochee.com"
+      }
+    }

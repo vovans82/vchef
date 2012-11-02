@@ -1,0 +1,17 @@
+{
+  "name": "local_proxy",
+  "description": "Local Proxy",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[opensips::local]",
+    "recipe[mysql-standalone::server_proxy]",
+    "recipe[opensips::voip_config]"
+  ],
+  "env_run_lists": {
+  }
+}

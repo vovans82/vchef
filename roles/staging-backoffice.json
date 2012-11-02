@@ -1,0 +1,17 @@
+{
+  "name": "staging-backoffice",
+  "description": "staging backoffice",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "secondary_environment": "staging",
+    "secondary_did": "rs12"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

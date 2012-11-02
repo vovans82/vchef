@@ -1,0 +1,23 @@
+{
+  "name": "ntpserver",
+  "description": "NTP role for ntp servers",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "ntp": {
+      "is_server": "true",
+      "servers": "3.us.pool.ntp.org"
+    }
+  },
+  "override_attributes": {
+    "ntp": {
+      "is_server": "true",
+      "servers": "3.us.pool.ntp.org"
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

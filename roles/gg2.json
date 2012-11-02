@@ -1,0 +1,17 @@
+{
+  "name": "gg2",
+  "description": "GoGrid Server in US-East-1",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "gg2"
+  },
+  "override_attributes": {
+    "location": "gg2"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

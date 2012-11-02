@@ -1,0 +1,16 @@
+    {
+      "id": "aleks",
+      "ssh_keys": [
+	"ssh-dss AAAAB3NzaC1kc3MAAACBAM9u10d9xW4lL0rmcmdyXFqtT8jGnZe3IggULHwEpYEukMFJBSHJs+aFHgpqWvbdMBbHqfUNwI64+KmGoA10VFoStDEZH0nsMenrQsD98CbiEl9Ic5HkY+ngDxHk9J9BRlytFe5JWgTceusFAEBp2dAWF4i8iyPB9X5zwGdnjwFHAAAAFQCYRWpkU2ccWAvt5/G1alNh/GS/6QAAAIEArNO9YHEHM3w5SmZFA02BSZ6CFzkeRBQL+tHbFtmpZIcqJ7ieTsCkviCkaeEQvx4Lb9IVb8h09zBC695Nd3JMWpn1J5ZtbpwG2HpGSqK1KN0b//XyBUi3wBM8BZnN8sxsh6ntqqj3eaz1O5OXfuNA4tRzU8a+kbRmdKs/7MfK+HYAAACAFnDatZRsMAWju4Fs6zvwRweXqg/jDEiItvutZH/cQgJPPMzVLNcSEyRvpV4jBc1P8sKGjtiL//H7BwMKnP7mUATpk5FVGgyLPYNyPxEBat5e0vHMwQa1D9V4J9EMLGrprG19QvbnRj7NQMwXuClkEWysJNEOiwVyO+HWn2lqVko= Aleks-20110326"
+	],
+      "password": "$1$sAz.BpBa$iOEGN/eaU/ecEa3Bs9PBW0",
+      "groups": "dev",
+      "uid": 2199,
+      "gid": 2199,
+      "name": "Aleks",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee Dev Staff",
+      "nagios": {
+        "email": "aleks@choochee.com"
+      }
+    }

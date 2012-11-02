@@ -1,0 +1,17 @@
+{
+  "name": "rs116",
+  "description": "rs deployment",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "rs116"
+  },
+  "override_attributes": {
+    "location": "rs1"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "bofh10",
+  "description": "bofh deployment",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "bofh10"
+  },
+  "override_attributes": {
+    "location": "ORD",
+    "chef_client": {
+      "server_url": "https://chef001.rs1.inf.choochee.com"
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

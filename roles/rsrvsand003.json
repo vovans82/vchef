@@ -1,0 +1,17 @@
+{
+  "name": "rsrvsand003",
+  "description": "sandbox deploymnet",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "rsrvsand003"
+  },
+  "override_attributes": {
+    "location": "ORD"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

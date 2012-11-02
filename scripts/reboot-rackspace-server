@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+nodename=$1
+env=$2
+
+export CLOUD_SERVERS_USERNAME=`grep rackspace_api_username ~/.chef/${env}-knife.rb|awk -F= '{print $2}'|sed -e 's/"//g'`
+export CLOUD_SERVERS_API_KEY=`grep rackspace_api_key ~/.chef/${env}-knife.rb|awk -F= '{print $2}'|sed -e 's/"//g'`
+
+echo $rsid
+echo $nodename
+echo $env
+echo $CLOUD_SERVERS_USERNAME
+echo $CLOUD_SERVERS_API_KEY
+
+/usr/local/bin/cloudservers reboot --hard $nodename.$env.choochee.com

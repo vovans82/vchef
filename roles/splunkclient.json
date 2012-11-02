@@ -1,0 +1,16 @@
+{
+  "name": "splunkclient",
+  "description": "Splunk Client",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[splunk::forwarder]",
+    "recipe[splunk::unix-app]"
+  ],
+  "env_run_lists": {
+  }
+}

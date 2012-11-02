@@ -1,0 +1,19 @@
+{
+  "name": "dev",
+  "description": "Dev role for Hadoop",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "mysqlhost": "sql002-dev-gg1-eth1",
+    "namenode_ip": "208.96.11.244",
+    "namenode": "dfs001-dev-gg1",
+    "app_environment": "dev"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

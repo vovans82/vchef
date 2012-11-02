@@ -1,0 +1,15 @@
+    {
+      "id": "avi",
+      "ssh_keys": [
+        "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDh4o/aYFk2Yi4HmQQVSqxXELEDRRjnp2KQ6QbpsIMh63p7q/hW97BVXxtMHOMmjHuWrfa5qgc1loCxQkTlmFQ8JH4H7kXMdkxPod4sNMOK536gj5G7zsO2k+d0HUedCwLm6VhHFRAvi5GDWoBQkXQcA+xKf/P44d1oQhm3iqyBbw== amrapali@localhost" ],
+      "password": "cg1CkgULuXjvI",
+      "groups": "ops",
+      "uid": 2510,
+      "gid": 2510,
+      "name": "Avi Bytel",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee Customer Service OPS",
+      "nagios": {
+        "email": "avi@choochee.com"
+      }
+    }

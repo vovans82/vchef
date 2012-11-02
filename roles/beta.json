@@ -1,0 +1,17 @@
+{
+  "name": "beta",
+  "description": "Beta Release Environment",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "nagios_name": "Beta"
+  },
+  "override_attributes": {
+    "app_environment": "beta"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

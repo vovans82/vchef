@@ -1,0 +1,17 @@
+{
+  "name": "lon360",
+  "description": "lon deployment",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "lon360"
+  },
+  "override_attributes": {
+    "location": "ORD"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

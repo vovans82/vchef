@@ -1,0 +1,20 @@
+    {
+      "id": "eggzie",
+      "ssh_keys": [
+"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAkkDmKT3Uj/vE7CCJVc/P24XG4fvq4vxzZiBt4WWoyTaBZ23pX7TGaJ3RzEiL64aMG4q0X5kPkXyKiv3C0N/BCattXBsqW8lR7IywJbfhR0PHTY9RWoalXyemGAHhBnX3EXjOQZ6fvRi0n7gqzCuUNNfoxJ+mB9nDXqAQUy82LeRTUHlAweDO3L/5UwPwwd7HbQkKzlxK/25UOU0C7aYQrozYSEd1Bn79HMj1StBmXIavqm7dJuKpRTtHQZqU8j/fCaMuyAwwQfZ1Lv1YWIX8J3epgTES9Fpuux4yCNCFsrdFKvSmMokR2zVOKfTgCXsc1Ct86aEACXiISnNTCa7qnQ== weggly-ssh2-rsa"
+      ],
+      "password": "$1$1S/sj4Bc$50NELQpZ0BW4hdcpTHCFh1",
+      "groups": "ops",
+      "uid": 2513,
+      "gid": 2513,
+      "name": "Warren Eggly",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee Ops  Warren Eggly",
+      "nagios": {
+        "email": "warren.eggly@choochee.com",
+        "mobile": { 
+          "phone": "6502745879",
+          "provider": "sprint" },
+        "on_call": "true"
+      }
+    }

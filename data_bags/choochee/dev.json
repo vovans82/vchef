@@ -1,0 +1,6 @@
+{
+  "id": "dev",
+  "ws_hostname": "cws.dev.choochee.com",
+  "xmpp_hostname": "msg.dev.choochee.com",
+  "provision": "provdev.choochee.com"
+}

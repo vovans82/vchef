@@ -1,0 +1,18 @@
+{
+  "name": "lon1",
+  "description": "Management Deployment",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "nagios_server": "nag001.rs1.inf.choochee.com",
+    "deployment_id": "lon1"
+  },
+  "override_attributes": {
+    "location": "LON"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

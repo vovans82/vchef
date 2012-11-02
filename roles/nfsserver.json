@@ -1,0 +1,29 @@
+{
+  "name": "nfsserver",
+  "description": "Role applied to the system that should be an NFS server.",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "nfs": {
+      "packages": [
+        "portmap",
+        "nfs-utils",
+        "nfs-utils-lib",
+        "nfs4-acl-tools"
+      ],
+      "ports": {
+        "statd": 32765,
+        "statd_out": 32766,
+        "mountd": 32767,
+        "lockd": 32768
+      }
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[nfs::server]"
+  ],
+  "env_run_lists": {
+  }
+}

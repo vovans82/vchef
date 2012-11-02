@@ -1,0 +1,15 @@
+{
+  "name": "mysql-standalone",
+  "description": "mysql standalone server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[mysql-standalone::server]"
+  ],
+  "env_run_lists": {
+  }
+}

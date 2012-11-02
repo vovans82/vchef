@@ -1,0 +1,16 @@
+{
+  "id": "bluebox",
+  "comment": "ports for web servers",
+  "source":{
+	"0.0.0.0/0": {
+		"tcp": [
+			"80"
+		],
+		"udp": [
+		]
+  	},
+	"10.113.118.0/24": {
+		
+	}
+  }
+}

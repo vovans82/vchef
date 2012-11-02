@@ -1,0 +1,16 @@
+    {
+      "id": "cvbjkl",
+      "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAuyBDIO1RV52mAtmmK5Ogg7+cozshfJg+UC6tVEKwAt2boR+sMTP7MiDPpoPj/i+SDhZoR//JCvT5I9uAxU2IBZZ9UBJYiCbrbSt1geOIk3CI1a0TyRm0itFqBBa/7vd0P0RwkW5cq8RFKtLv56RdeT/22Q5EEdRfc2BNUYQfW6nFWOZfWKFVwCgpomvEke9wCLNkgC/8hVSgI5zL9lw+KJ9tU9dQl/GabtnLUObSMnBU1FN50dsWkM1AgEuPLYCLr768ULAuSRRfjf6CjLfIjR8hPhWJXJwAtH6KHIK97U4A5VBhiozhNtx75P8IaZ5xTuQ5KEgDXaVQHzHrcfw== cvbjkl@Senjin.local"
+	],
+      "password": "$1$ezKNorvN$/7mBfok9M32zR46BYgnmT/",
+      "groups": "dev",
+      "uid": 2029,
+      "gid": 2029,
+      "name": "Jonathan Chan",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee Dev Staff",
+      "nagios": {
+        "email": "null@choochee.com"
+      }
+    }

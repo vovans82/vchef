@@ -1,0 +1,10 @@
+{
+  "id": "beta",
+  "ws_hostname": "cws.beta.choochee.com",
+  "xmpp_hostname": "msg.beta.choochee.com",
+  "sms_verify": "14088004892",
+  "provision": "provbeta.choochee.com",
+  "central_did_hostname": "cwsuk.choochee.com",
+  "ws_static_hostname" : "cws.beta.choochee.com",
+  "polycom_port": "10000"
+}

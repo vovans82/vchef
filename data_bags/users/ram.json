@@ -1,0 +1,20 @@
+    {
+      "id": "ram",
+      "ssh_keys": [
+        "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD5piCb5hgln5g6ZfZMqlsnin2+W+SZ1T3skKq71YY0mj0P9Dd8OuKZbjEMgJUL19ceFRPltblINkJh0Fop3Cc9FvN6y2XPLKEXHfSRjrCT+c6p+g8HtAHG6zBdmtbCnFA5w91uV1ATjW5GTVBI87iUoYumJf4X2mPnH5msOT/knBnVFnlR1/Lva8L3/gDQXfUTJECYo65u892kbNH/nC6MlYNKRcNUnmCTmk1ag1K+N+xfSqLrhGHU1kn7VkKz+AEw0cw9K8uSxyAOtad+I6FJ4wbbrgSTyWOOwQ1gj+msoVZzPHPnY9d2nQwarhr3mfmNDIQ7Ng676g0zLtdl7WAt ram@Ram-Laptop"
+        ],
+      "password": "mY1YMQ.jIVT9g",
+      "groups": "ops",
+      "uid": 2506,
+      "gid": 2506,
+      "name": "Ram Akuka",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee Ops Staff",
+      "nagios": {
+        "email": "ram@choochee.com",
+        "mobile": { 
+          "phone": "4084774497",
+          "provider": "tmobile" },
+        "on_call": "true"
+      }
+    }

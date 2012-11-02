@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'cloudservers'
+
+
+if ! ARGV[0].nil?
+    rsid = ARGV[0]
+end
+    
+if ! ARGV[1].nil?
+    ds = ARGV[1]
+else
+    ds = "orig"
+end
+
+USERNAME=%x[grep rackspace_api_username ~/.chef/#{ds}-knife.rb|awk -F= '{print $2}'|sed -e 's/"//g']
+KEY=%x[grep rackspace_api_key ~/.chef/#{ds}-knife.rb|awk -F= '{print $2}'|sed -e 's/"//g']
+
+if ds == "ukprod"
+    cs = CloudServers::Connection.new(:username => USERNAME, :api_key => KEY, :auth_url => CloudServers::AUTH_UK)
+else
+    cs = CloudServers::Connection.new(:username => USERNAME, :api_key => KEY)
+end
+
+cs.server(rsid).reboot!
+
+# End
+

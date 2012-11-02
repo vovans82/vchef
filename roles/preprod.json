@@ -1,0 +1,16 @@
+{
+  "name": "preprod",
+  "description": "Pre-Prod role for Hadoop",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "app_environment": "preprod"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

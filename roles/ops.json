@@ -1,0 +1,22 @@
+{
+  "name": "ops",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "ops",
+    "nagios_name":      "Operations",
+    "nagios_pbx_name":  "cws.ops.choochee.com",
+    "nagios_server":    "nag001.rs36.ops.choochee.com"
+
+  },
+  "override_attributes": {
+    "location": "rs1",
+    "app_environment": "ops"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

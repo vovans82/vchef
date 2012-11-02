@@ -1,0 +1,15 @@
+    {
+      "id": "build",
+      "ssh_keys": [
+	"ssh-dss AAAAB3NzaC1kc3MAAACBAPScJIHfk2gX/nNLYt/hPiXAR0u2jOAjdxctC+qJXWQuqu52Ct4tDtpcs/eRMENQxkkM19+E0ElIB+SJ/G6vW1XH8zaZRC1vnrHGt8jWY+Bi1xLiL9N29knh6GDur55SrPJiCXvrwEZByv5or++4/myKL4TjysZCkKI73vhrYbAPAAAAFQCJ7NsFqhBgTe3Q3tkGbHBa6hjs+QAAAIEAwoJZJlz1+Lo/xMDjeOzt5MlBM5bhzVWWIjeG/xOgnsGPXMZ5f9CB1kaXjOvcSYxdCRztXFMywPYe9PnkGnzGuMzHyqMk8Lvcxt/9dhNsJXYDTapbBQh+2mjGUKGbZF2VwUQFAvJsjY5LavdY8s8gbn+R6nq74+bBespvZ6HOlRUAAACAETrh9OzY83ENy4WYPniNIHKQlMF14t/8pu+xWbu5iEstlfb9uv+PlXBTQ/PVZSFvi5xCehq+XejLt4airaXJjGwATCAhnYDf2yvEL17KJ9umxJY5UQcKRT9bjbZUpYtrr91CuCkkH6iD+yiii5bfdhCjhc3g2gOijQZybP5Wv4w= builder@hostname17035",
+"ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq9ZDlCW/J5n1Y3WglT89gQzO3XcZ8P+gygMIsDSB+R6N56NbeR80XoChmzvyWc+FrwdjdBlXQECCtuv9NE57jSQaQ0cE7iEXUdKOy2EEIV+yn1xrMvEswf55IjqrtwCCuTgROU0G3v1ucte0WLLlphjMDCrKGccUIE32US+NpBgJPTGVvZjVnja/n3hf5327CAMDs8JeiygJzaGfPFMBrCcNgBjPIYgXKignAKczauDdhaZmxk86ns076hQYAELy5tn9W3WhI/wi5Tv+I7uRYofbtP8GcSqgootSSVonS44R/DLJRWxby1daE2cXHwB1IcEDUAnwoHQJNa932qCK4w== root@chef001-prod-gg2.choochee.com",
+"ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAshH3dlplvDqDWJ1hmSAkpnZHZoEj3NufC2Pa4kfnLl2MM7GY58/GQGT8xZ+Esxi+8ynMVOtssf4oSxmS3AVEPPdW3JrZWx3z4uMEucKGDEN5eaBlHYeWp9SSqcmCietKh5w5Lz/CYipGMbqAqK+1U9tZTRt+W1i3Tbf58c67EfmZqgwT/1fZY/2IGuNZZMg1JqnYpPsP3prpIOWMqnJSjNZMU9Yeb8PIy+57iqPfX6ea4ryKd0yyEEyNM1dXGV9+2BuO1mNP7HYO9JKx+iCG7S1Vgu5w+qRyx1daRaWM7sjhVL8e36OI4Qi6St5ESvkr4iu63cJmLKoZHPP+NUcNGw== root@rundeck.rs1.inf.choochee.com", 
+"ssh-dss AAAAB3NzaC1kc3MAAACBAKJXR1WPWjybR0xnJlHseOdaw5gCsnYCGWlwnhjqW3jtCuqDUqe7n4RYM2nvLBzyL1xb5+DCCF7WSG53S51GDXFH/XtzxoXZym2ZDxKZpDtQ4mRXZR/EcW5hCcL1YLA55CqLofJXSE3B2gB459KkHTNxL4UuFDfvU0H0KwAy1707AAAAFQDVWfDpLMq83TfrUSrMZvutp3oV6wAAAIBaMMYPl0uqpMqm3k+tQu5qQyzDbE4g13pUtxulk5Din8515AJDUyF+JMnGm5Yl63sGvdavA7CHAwiOAUNGkuX4C9ciOY1ZyKNeYR/9fKoRMf3UaOHeQGH9/kRIKgojC01M9nn4gvGfwu4TCwoz6aSMJ8aNLgxLcMUwsHys+CiWJQAAAIEAokQaW038FYjP5m8oY6sFhvNHebl+mQisWDjERBxePZpdL8gQbGiX5YXL+TEJGCndOKIfNfyNMOhOhG+F7bM5mQmZtW5QXG1mkZobwNgSgMEohDphnFGldkp/tLSUMFq5XLHh7XjQZ7rqh8tQ6WRnI0eoaR7tI+kWHVJLW4CgsGM= jenkins@bld001.lon1.mgn.choochee.com"],
+      "password": "N4pvkzEVL/fuc",
+      "groups": "build",
+      "uid": 3007,
+      "gid": 3007,
+      "name": "Build user",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee Build User"
+    }

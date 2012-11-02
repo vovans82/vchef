@@ -1,0 +1,16 @@
+{
+  "id": "noncollector",
+  "cdr_collect": false,
+  "telco_enabled": false,
+  "account_suspension":false,
+  "billingRun": false,
+  "billingPay": false,
+  "telco_onhold_cleanup": false,
+  "scheduler_enabled": false,
+  "telco_onhold_scheduler": "0 0 * * * *",
+   "device_registration_enabled" : "false",
+   "voicemail_email_service" : "false",
+   "cdr_timer_enabled" : "false",
+   "index_update" : "false",
+  "configuration_media_job": false
+}

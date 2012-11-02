@@ -1,0 +1,19 @@
+    {
+      "id": "root",
+      "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq9ZDlCW/J5n1Y3WglT89gQzO3XcZ8P+gygMIsDSB+R6N56NbeR80XoChmzvyWc+FrwdjdBlXQECCtuv9NE57jSQaQ0cE7iEXUdKOy2EEIV+yn1xrMvEswf55IjqrtwCCuTgROU0G3v1ucte0WLLlphjMDCrKGccUIE32US+NpBgJPTGVvZjVnja/n3hf5327CAMDs8JeiygJzaGfPFMBrCcNgBjPIYgXKignAKczauDdhaZmxk86ns076hQYAELy5tn9W3WhI/wi5Tv+I7uRYofbtP8GcSqgootSSVonS44R/DLJRWxby1daE2cXHwB1IcEDUAnwoHQJNa932qCK4w== root@chef001-prod-gg2.choochee.com",
+	"ssh-dss AAAAB3NzaC1kc3MAAACBAPScJIHfk2gX/nNLYt/hPiXAR0u2jOAjdxctC+qJXWQuqu52Ct4tDtpcs/eRMENQxkkM19+E0ElIB+SJ/G6vW1XH8zaZRC1vnrHGt8jWY+Bi1xLiL9N29knh6GDur55SrPJiCXvrwEZByv5or++4/myKL4TjysZCkKI73vhrYbAPAAAAFQCJ7NsFqhBgTe3Q3tkGbHBa6hjs+QAAAIEAwoJZJlz1+Lo/xMDjeOzt5MlBM5bhzVWWIjeG/xOgnsGPXMZ5f9CB1kaXjOvcSYxdCRztXFMywPYe9PnkGnzGuMzHyqMk8Lvcxt/9dhNsJXYDTapbBQh+2mjGUKGbZF2VwUQFAvJsjY5LavdY8s8gbn+R6nq74+bBespvZ6HOlRUAAACAETrh9OzY83ENy4WYPniNIHKQlMF14t/8pu+xWbu5iEstlfb9uv+PlXBTQ/PVZSFvi5xCehq+XejLt4airaXJjGwATCAhnYDf2yvEL17KJ9umxJY5UQcKRT9bjbZUpYtrr91CuCkkH6iD+yiii5bfdhCjhc3g2gOijQZybP5Wv4w= builder@hostname17035",
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAshH3dlplvDqDWJ1hmSAkpnZHZoEj3NufC2Pa4kfnLl2MM7GY58/GQGT8xZ+Esxi+8ynMVOtssf4oSxmS3AVEPPdW3JrZWx3z4uMEucKGDEN5eaBlHYeWp9SSqcmCietKh5w5Lz/CYipGMbqAqK+1U9tZTRt+W1i3Tbf58c67EfmZqgwT/1fZY/2IGuNZZMg1JqnYpPsP3prpIOWMqnJSjNZMU9Yeb8PIy+57iqPfX6ea4ryKd0yyEEyNM1dXGV9+2BuO1mNP7HYO9JKx+iCG7S1Vgu5w+qRyx1daRaWM7sjhVL8e36OI4Qi6St5ESvkr4iu63cJmLKoZHPP+NUcNGw== root@rundeck.rs1.inf.choochee.com"
+        ],
+      "password": "",
+      "home": "/root",
+      "groups": "root",
+      "uid": 0,
+      "gid": 0,
+      "name": "root",
+      "shell": "\/bin\/bash",
+      "comment": "Root User",
+      "nagios": {
+        "email": "ops@choochee.com"
+      }
+    }

@@ -1,0 +1,16 @@
+    {
+      "id": "esprings",
+      "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEApARTIZpvu0BUQOcL5DXtbZq0biUlqTlrzYGAbuSZQTYwg8aIqG+IRmcO7EigDWeD1tLFhloyNStU9qKHpx+AeNC9ae8j5eyC2eR102zqJv9j8UqF+1LCFqItJqZK1Il5s6l+01c/XBjuBfz1xyRYKebgfYWzXBrPPkaDjHGJHIHOlpVS2r1WVUOELOpuFuYLnWQmlSwBtok/jQqTGEDzC70qk88vYWMD4hCthMQalK5h+Eg7oyceM8rWcKIHHt6lViwkIsH/nr02JN+drqh5KDU1bVmYBicErkdr0eoxwJDntMY3NF8COBMyhrMWUEP/PhdcFjnNE2BIUEEswn1hTw== esprings@nag001.rs36.ops.choochee.com"
+	],
+      "password": "$1$0cUTOAm9$sNl.wIdhu0k4iGpQ5pgoG/",
+      "groups": "qa",
+      "uid": 2034,
+      "gid": 2034,
+      "name": "Errol Springs",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee QA Staff",
+ 	"nagios": {
+        "email": "nobody@choochee.com"
+	}
+   }

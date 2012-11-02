@@ -1,0 +1,15 @@
+{
+  "name": "qscrelay",
+  "description": "QSC Relay",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[webservices::qscrelay]"
+  ],
+  "env_run_lists": {
+  }
+}

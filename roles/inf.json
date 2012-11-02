@@ -1,0 +1,17 @@
+{
+  "name": "inf",
+  "description": "Infrastructure role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "nagios_name": "Infrastructure"
+  },
+  "override_attributes": {
+    "app_environment": "inf"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

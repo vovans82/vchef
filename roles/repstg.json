@@ -1,0 +1,15 @@
+{
+  "name": "repstg",
+  "description": "Replication role for staging",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[webservices::replication]"
+  ],
+  "env_run_lists": {
+  }
+}

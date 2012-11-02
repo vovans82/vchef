@@ -1,0 +1,9 @@
+{
+  "id": "preprod",
+  "ws_hostname": "cws.preprod.choochee.com",
+  "xmpp_hostname": "msg.preprod.choochee.com",
+  "provision": "provpreprod.choochee.com",
+"billingRun": false,
+"ws_static_hostname" : "cws.preprod.choochee.com",
+  "central_did_hostname": "svccat.dev.choochee.com"
+}

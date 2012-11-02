@@ -1,0 +1,9 @@
+{
+  "id": "perf",
+  "ws_hostname": "cws.perf.choochee.com",
+  "xmpp_hostname": "msg.perf.choochee.com",
+  "sms_verify": "14084636291",
+  "provision": "provperf.choochee.com",
+  "polycom_port": "11000",
+  "central_did": "false"
+}

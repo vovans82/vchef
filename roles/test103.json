@@ -1,0 +1,17 @@
+{
+  "name": "test103",
+  "description": "test deployment",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "test103"
+  },
+  "override_attributes": {
+    "location": "ORD"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

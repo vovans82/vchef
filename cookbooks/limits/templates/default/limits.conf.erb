@@ -1,0 +1,33 @@
+# CHEF: This configuration is managed, changes will not be permanent
+<% if node[:roles].include?("hbase") || node[:roles].include?("datanode") || node[:roles].include?("namenode") %>
+hdfs                -       nofile          32768
+hbase               -       nofile          32768
+<% end %>
+<% if node[:roles].include? "ws" %>
+choochee            hard    nofile          32768
+choochee            soft    nofile          32768
+<% end %>
+<% if node[:roles].include? "messaging" %>
+daemon              hard    nofile          32768
+daemon              soft    nofile          32768
+<% end %>
+<% if node[:roles].include? "jmeter" %>
+subbu               hard    nofile          32768
+subbu               soft    nofile          32768
+<% end %>
+<% if node[:roles].include? "freeswitch" %>
+freeswitch      hard    *               unlimited
+freeswitch      soft    *               unlimited
+
+*               -       core            unlimited
+*               -       data            unlimited
+*               -       fsize           unlimited
+*               -       memlock         unlimited
+*               -       nofile          999999
+*               -       stack           8192
+*               -       nproc           unlimited
+*               -       as              unlimited
+*               -       locks           unlimited
+*               -       sigpending      unlimited
+*               -       msqqueue        unlimited
+<% end %>

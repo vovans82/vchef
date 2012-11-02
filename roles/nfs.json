@@ -1,0 +1,16 @@
+{
+  "name": "nfs",
+  "description": "Role applied to the system that should be an NFS client.",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[nfs]",
+    "recipe[nfs::client_mounts]"
+  ],
+  "env_run_lists": {
+  }
+}

@@ -1,0 +1,44 @@
+# Local chef server
+upstream chef_api {
+  server localhost:4000;
+  server localhost:4001;
+  server localhost:4002;
+  server localhost:4003;
+  server localhost:4004;
+  server localhost:4005;
+  server localhost:4006;
+  server localhost:4007;
+}
+
+# Local chef webui
+upstream chef_webui {
+  server localhost:4040;
+}
+
+# Remote bigcouch instances
+upstream couch {
+  server localhost:5984;
+}
+
+server {
+  server_name chef.choochee.com chef-server-proxy localhost <%= node['fqdn'] %> chef.<%= node['domain'] %> ;
+  listen 80;
+  
+  root <%= node['chef_server']['doc_root'] %>;
+
+  location / {
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_redirect off;
+
+    # API request incoming
+    if ($http_x_ops_timestamp != "") {
+      proxy_pass http://chef_api;
+      break;
+    }
+
+    # webui request
+    proxy_pass http://chef_webui;
+  }
+}

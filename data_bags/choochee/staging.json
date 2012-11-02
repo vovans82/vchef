@@ -1,0 +1,7 @@
+{
+  "id": "staging",
+  "ws_hostname": "cws.staging.choochee.com",
+  "xmpp_hostname": "msg.staging.choochee.com",
+  "provision": "provstaging.choochee.com",
+  "polycom_port": "12000"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "prod-backoffice",
+  "description": "prod backoffice",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "secondary_environment": "prod",
+    "secondary_did": "lon343"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

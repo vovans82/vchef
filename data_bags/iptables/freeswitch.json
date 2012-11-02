@@ -1,0 +1,13 @@
+{
+  "id": "freeswitch",
+  "comment": "ports for sip",
+  "proto": {
+        "tcp": [
+        ],
+        "udp": [
+                "5060",
+                "5080"
+        ]
+  }
+}
+

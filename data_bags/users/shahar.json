@@ -1,0 +1,19 @@
+    {
+      "id": "shahar",
+      "ssh_keys": [
+        ],
+      "password": "5PSX73nxbVI8s",
+      "groups": "ops",
+      "uid": 3300,
+      "gid": 3300,
+      "name": "Shahar Alster",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee Ops Staff",
+      "nagios": {
+        "email": "shahar@choochee.com",
+        "mobile": { 
+          "phone": "4089159158",
+          "provider": "verizon" },
+        "on_call": "true"
+      }
+    }

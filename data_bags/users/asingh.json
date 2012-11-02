@@ -1,0 +1,16 @@
+    {
+      "id": "asingh",
+      "ssh_keys": [
+	""
+	],
+      "password": "$1$BCNCtpd.$kEDqLzKzSW9PxlfHpaS.8/",
+      "groups": ["qa"],
+      "uid": 2567,
+      "gid": 2567,
+      "name": "Ashvinder Singh",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee QA Staff",
+      "nagios": {
+        "email": "ashvinder.singh@choochee.com"
+      }
+    }

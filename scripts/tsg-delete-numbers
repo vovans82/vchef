@@ -1,0 +1,46 @@
+#!/bin/bash
+all=$(mktemp)
+keepers=$(mktemp)
+losers=$(mktemp)
+
+cat > $keepers << EOM
+18052544003
+15108638870
+16504192640
+15593324223
+16616224122
+17076687677
+17144087259
+18052836295
+17602064080
+15306286215
+19287880131
+17603505085
+15017810836
+17077444545
+18706191444
+16503186200
+EOM
+
+curl https://billing.wc-tsgglobal.com/api/did_lookup_api.php?api_key=f96b3a39-51ef-9124-8300-fd01ec49c156|sed -ne 's/.*\([0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]\).*/\1/gp' > $all
+
+curl https://billing.wc-tsgglobal.com/api/did_lookup_api.php?api_key=f96b3a39-51ef-9124-8300-fd01ec49c156|sed -ne 's/.*\(1877[0-9][0-9][0-9][0-9][0-9][0-9][0-9]\).*/\1/gp' >> $keepers
+
+for did in `cat $all`; do
+    if ! grep -q $did $keepers; then
+	echo $did >> $losers
+    fi
+done
+
+echo all=$all
+echo keepers=$keepers
+echo losers=$losers
+
+for did in `cat $losers`; do
+    echo curl "http://portal.tsgglobal.com/customerportal/api/Delete_Orders_DIDCart.asp?MAPIK=f96b3a39-51ef-9124-8300-fd01ec49c156&Cust_ID=CHO100167&servicetype=vom&state=AL&ratecenter=CLANTON&did=${did}"
+done
+
+
+rm -f $all $keepers $losers
+
+# End

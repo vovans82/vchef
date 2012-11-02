@@ -1,6 +1,6 @@
 {
   "name": "base",
-  "description": "",
+  "description": "Base role for the choochee",
   "json_class": "Chef::Role",
   "default_attributes": {
   },
@@ -8,8 +8,28 @@
   },
   "chef_type": "role",
   "run_list": [
-   "recipe[hosts]",
-   "recipe[users::sysadmins]"
+    "recipe[accounts]",
+    "recipe[choochee]",
+    "recipe[selinux]",
+    "recipe[god]",
+    "recipe[yumrepo]",
+    "recipe[limits]",
+    "recipe[timezone]",
+    "recipe[postfix]",
+    "recipe[openssh]",
+    "recipe[sudo]",
+    "recipe[bind::resolv]",
+    "recipe[hosts]",
+    "recipe[basics]",
+    "recipe[ssh_known_hosts]",
+    "recipe[chef-client::config]",
+    "recipe[chef-client]",
+    "recipe[chef_handler]",
+    "recipe[logrotate]",
+    "recipe[iptables]",
+    "recipe[nagios]",
+    "recipe[cron]",
+    "recipe[ntp]"
   ],
   "env_run_lists": {
   }

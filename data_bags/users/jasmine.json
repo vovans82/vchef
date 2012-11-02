@@ -1,0 +1,16 @@
+    {
+      "id": "jasmine",
+      "ssh_keys": [
+        "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIEAnntBy2TPdfVGgLn8Eb2HHB9dMYHQLgyTLs3MEPnqRVeJb0f/kWvO/Jflzm5PQZQ2egKJb85j6fAk/aHIz5llsGjUFQi6shiomPVsIfEBPNyGvfO1tESfKJ8F4xr8QDBLWpnZhL45PSA+0f0HDNqClTUqNNBAGLTYYC7rMGp8ev8= jasmine@choochee.com"
+	],
+      "password": ".rTTNxIOio1nQ",
+      "groups": "qa",
+      "uid": 2388,
+      "gid": 2388,
+      "name": "Jasmine George",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee QA Staff",
+      "nagios": {
+        "email": "null@choochee.com"
+      }
+    }

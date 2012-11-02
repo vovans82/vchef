@@ -1,0 +1,12 @@
+    {
+      "id": "apache",
+      "ssh_keys": [],
+      "password": "",
+      "home": false,
+      "groups": "hadoop",
+      "uid": 48,
+      "gid": 48,
+      "name": "Apache",
+      "shell": "\/sbin\/nologin",
+      "comment": "Apache"
+    }

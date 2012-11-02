@@ -1,0 +1,16 @@
+    {
+      "id": "sridhar",
+      "ssh_keys": [
+	"ssh-dss AAAAB3NzaC1kc3MAAACBAKRvmJo291myZtP7T2CCygYudfceE7ZWVvC56aSeURRSSPIU6kHUKGw7f58DzBy9rJ1BcEShEcRN/1BvQRm2Dk5h6iGFw2GWHVIhJWqnvId3JiFCJLUrmH/EaVwraeldH66iwVZDn0VNwAgYR5oLqtoqzc1QWSfKTPeXScEFNrdtAAAAFQCuvF/FZ8dE06C6+Ved4niabqSi2QAAAIBZPFI9jsKHa5ST7llJkHWjErNLa9sbguljKQlYQc0VgAJpR5r7YyfoVHuJ9t6pMpUHsWDNZc4oz6dbnPepOoRp3rH0MecD1OTap/GTMk9pUvfn58Ir8WkLD3R0VCLlJjslfw+haUvHU7a1E5kv5tjv0WM1ml+VEXM38ztKyvrE4wAAAIEAmJcOp1exFZm8A/s5u+MJX+O9YW2QcTKNiN01JQXReKLtJtfSppm2B/T559N6L77+F4b3t2qodSll88hvgmmkh5KpgAU6ZlO6R1qRsBpGdes/wNvP0WrqZnKFPm2tB28778T+dM/eSA3fH7a3JqvWrezp2mmRjTN3U+SnAwzCTas= dev@devbox"
+	],
+      "password": "$1$3Jiw5I1H$9B6dh1Z5fVfz.syf2d/fx0",
+      "groups": "dev",
+      "uid": 2024,
+      "gid": 2024,
+      "name": "Sridhar Jallapuram",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee Dev Staff",
+      "nagios": {
+        "email": "sridhar@choochee.com"
+      }
+    }

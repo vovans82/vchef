@@ -1,0 +1,17 @@
+{
+  "id": "collector",
+  "cdr_collect": true,
+  "telco_enabled": true,
+  "account_suspension":false,
+  "billingRun": true,
+  "billingPay": true,
+  "telco_onhold_cleanup": true,
+  "scheduler_enabled": true,
+  "telco_onhold_scheduler": "0 0/5 * * * *",
+   "device_registration_enabled" : "true",
+   "voicemail_email_service" : "true",
+   "cdr_timer_enabled" : "true",
+   "index_update" : "true",
+  "configuration_media_job": true
+
+}

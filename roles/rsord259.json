@@ -1,0 +1,17 @@
+{
+  "name": "rsord259",
+  "description": "rsord deployment",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "rsord259"
+  },
+  "override_attributes": {
+    "location": "ORD"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

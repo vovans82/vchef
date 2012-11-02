@@ -1,0 +1,16 @@
+{
+  "name": "relay",
+  "description": "Service Relay Role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "type": "relay"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "prod",
+  "description": "Prod role for Hadoop",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "nagios_name": "Production",
+    "nagios_server": "nag001.rs1.inf.choochee.com"
+  },
+  "override_attributes": {
+    "app_environment": "prod"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

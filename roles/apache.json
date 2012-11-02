@@ -1,0 +1,18 @@
+{
+  "name": "apache",
+  "description": "Generic apache2 server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[apache2]",
+    "recipe[apache2::mod_ssl]",
+    "recipe[apache2::mod_cgi]",
+    "recipe[apache2::mod_rewrite]"
+  ],
+  "env_run_lists": {
+  }
+}

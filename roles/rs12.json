@@ -1,0 +1,17 @@
+{
+  "name": "rs12",
+  "description": "rs deployment",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "rs12"
+  },
+  "override_attributes": {
+    "location": "ORD"
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[tcollector]"
+  ],
+  "env_run_lists": {
+  }
+}

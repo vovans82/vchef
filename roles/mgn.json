@@ -1,0 +1,19 @@
+{
+  "name": "mgn",
+  "description": "Management Environment Role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "mgn",
+    "nagios_server": "nag001.rs1.inf.choochee.com"
+  },
+  "override_attributes": {
+    "location": "lon1",
+    "app_environment": "mgn"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

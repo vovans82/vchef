@@ -1,0 +1,20 @@
+    {
+      "id": "lootra",
+      "ssh_keys": [
+"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC18c4VpJfC7qYPvEQ2FNSwOnBlQ5tenhrjeS1EHDBzw3PV2YNIvowiM6XkdEhuqU3milcliGqzIDMzqF++raLB+bunM1DG0LXovzQ2A5iTv7NfXEB2J0fNGOic60AlFl+a+LC6MBGGxyIfEdNup4IrvIt3Y+SxlpxU8puoZjAz1u/RX+06Q2njkacuByDOWGvq0J93saKUz/qzRvxWZPXOfCmc0wX5AJ8pPxJmYI+Nh3QJ3VpoFIK/0VFj1t5lyZk4dT2Yz2TmVz8zWKqpFaiz20OQ7IpVAq20GVnz/pILU+vwWniZ1MOhDq8WXe0Bx9tFHaq3r+v8nEioxCUngV+b lootra@gerbil.local"
+      ],
+      "password": "hZ/7ICwECeSnU",
+      "groups": "ops",
+      "uid": 2512,
+      "gid": 2512,
+      "name": "Sharon Elran",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee Ops  Sharon Elran",
+      "nagios": {
+        "email": "sharon.elran@choochee.com",
+        "mobile": { 
+          "phone": "4088936846",
+          "provider": "att" },
+        "on_call": "true"
+      }
+    }

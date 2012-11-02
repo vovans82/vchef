@@ -1,0 +1,16 @@
+{
+  "name": "dd",
+  "description": "Direct Dialer Demo Server ",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "app_environment": "dd"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

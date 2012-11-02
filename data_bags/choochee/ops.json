@@ -1,0 +1,8 @@
+{
+  "id": "ops",
+  "ws_hostname": "cws.ops.choochee.com",
+  "xmpp_hostname": "msg.ops.choochee.com",
+  "provision": "provops.choochee.com",
+  "polycom_port": "5070",
+  "central_did": "false"
+}

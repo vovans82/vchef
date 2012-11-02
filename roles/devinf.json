@@ -1,0 +1,18 @@
+{
+  "name": "devinf",
+  "description": "Devinf environment",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "nagios_server": "nag001.rs2.devinf.choochee.com",
+    "nagios_name": "Development Infostructure"
+  },
+  "override_attributes": {
+    "app_environment": "devinf"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

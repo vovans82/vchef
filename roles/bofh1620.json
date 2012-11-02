@@ -1,0 +1,17 @@
+{
+  "name": "bofh1620",
+  "description": "bofh16 deployment",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "deployment_id": "bofh1620"
+  },
+  "override_attributes": {
+    "location": "ORD"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

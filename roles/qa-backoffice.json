@@ -1,0 +1,17 @@
+{
+  "name": "qa-backoffice",
+  "description": "QA backoffice",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "secondary_environment": "qa",
+    "secondary_did": "rs352"
+  },
+  "chef_type": "role",
+  "run_list": [
+
+  ],
+  "env_run_lists": {
+  }
+}

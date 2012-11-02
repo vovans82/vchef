@@ -1,0 +1,21 @@
+{
+  "name": "sandbox",
+  "description": "Sandbox Server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "app_environment": "sandbox"
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[mysql-standalone]",
+    "recipe[hadoop::hbase-standalone]",
+    "role[ws]",
+    "role[sipproxy]",
+    "role[freeswitch]",
+    "recipe[nx]"
+  ],
+  "env_run_lists": {
+  }
+}

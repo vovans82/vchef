@@ -1,0 +1,71 @@
+#!/usr/bin/env bash
+#==============================================================================
+# Create Direct Dialer Demo
+# Run on Chef
+#==============================================================================
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Instantiate a Direct Dialer database host
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+function create_db {
+    knife rackspace server create 'role[base]' 'role[dd]' 'role[dd1]' \
+	'role[mysql-standalone]' 'recipe[hadoop::hbase-standalone]' \
+	'role[messaging]' \
+	-i 51 -f 6 -N db$1.dd1.dd -S db$1.dd1.dd.choochee.com \
+	-d centos5-gems -c /root/.chef/inf-knife.rb 
+  
+    echo "Done provisioning Direct Dialer Demo Database $1..."
+
+    sleep 60
+
+    echo "Rebooting Direct Dialer Demo Database $1..."
+    knife ssh "role:dd AND name:db001*" reboot -a ipaddress
+
+    sleep 60
+    echo "Direct Dialer Demo Database $1 Done."
+}
+
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Instatiate a Direct Dialer webservices host
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+function create_ws {
+    knife rackspace server create 'role[base]' 'role[dd]' 'role[dd1]' 'role[ws]' \
+	-i 51 -f 6 -N ws$1.dd1.dd -S ws$1.dd1.dd.choochee.com \
+	-d centos5-gems -c /root/.chef/inf-knife.rb  &
+
+    echo "Done provisioning Direct Dialer Demo WebServices $1..."
+
+    sleep 60
+
+    echo "Rebooting Direct Dialer Demo WebServices $1..."
+    knife ssh "role:dd AND name:ws$1*" reboot -a ipaddress
+
+    sleep 60
+    echo "Direct Dialer Demo WebServices $1 Done."
+}
+
+function refresh_dns {
+    knife ssh "role:ns" chef-client -a ipaddress
+}
+
+# Delete any existing direct dialer systems 
+/opt/choochee/chef-scripts/bin/delete_rackspace_site dd dd1 inf
+for i in db001 ws001 ws002; do
+    knife client delete -y $i.dd1.dd
+    knife role delete -y $i.dd1.dd
+done
+
+# Create thee servers, one database, and two webservices.
+create_db 001
+refresh_dns
+create_ws 001 &
+waitfor1=$!
+create_ws 002 &
+waitfor2=$!
+
+wait $waitfor1
+wait $waitfor2
+
+###cat commands.txt | xargs -I cmd --max-procs=3 bash -c cmd
+
+# End

@@ -1,0 +1,8 @@
+{
+  "id": "qa",
+  "ws_hostname": "cws.qa.choochee.com",
+  "xmpp_hostname": "msg.qa.choochee.com",
+  "sms_verify": "14084636291",
+  "provision": "provqa.choochee.com",
+  "polycom_port": "11000"
+}

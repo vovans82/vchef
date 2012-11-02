@@ -1,0 +1,16 @@
+    {
+      "id": "auto",
+      "ssh_keys": [
+        "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCYSbYHOXWuhCPyEBKiifE1ZEL9q82zwFuk6OT4UVQWfHU9CNWVmGpaP54Pa/sq5wx5RwrMiJF+GZYnksL2Ba6oKEHedv/pBI/x1l0mocM9IXucgCWHDRLCQmCRWtC/RxadZKqLwJSimBQrHbCJSurIoOjFweaA9hPgVdLyrN1u3Hz0cFs5Q9Q9KIYJDiB+KttpVjh//O0bLRKwWBPU65eT+KpXLb2q54p23AUxDRd4IAurC3kwDRLDWLIOw53ZRiIYFaD+B0SzxEYaKz5ntJLVBtAWlys6dWXIoQ3rOjBz5UFDRsj+Mkd8LXf+guyPw5Y2/eHT/+Wdyn0vd0pK6x5T"
+        ],
+      "password": "$1$8WrzKYpa$UYlRo9WAeOrySJEuHmBNe.",
+      "groups": "dev",
+      "uid": 3504,
+      "gid": 3504,
+      "name": "Automation User",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee Automnation  Staff",
+      "nagios": {
+        "email": "ops@choochee.com"
+      }
+    }

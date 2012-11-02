@@ -1,0 +1,7 @@
+{
+  "id": "prod",
+  "ws_hostname": "cwsuk.choochee.com",
+  "xmpp_hostname": "msg.choochee.com",
+  "ws_static_hostname" : "cwsuk.choochee.com",
+  "provision": "prov.choochee.com"
+}

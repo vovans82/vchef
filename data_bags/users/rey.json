@@ -1,0 +1,16 @@
+    {
+      "id": "rey",
+      "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAzz6eAqtW9fqfNAEkRDK62E9awlsP4XKpJzwubqRqB3ZL2MEDTuPJg02myC5oMsaqJOUaMR8plPWvvR3mc4lO4dYAIip+Fe+kdKw3qXJcFe0qyT9trpfqUHr8DPq22oqY9tJ1ThE/Ga+WGA9Pi869oxYVZw0XnYp1ocUZF4HvM7TMTQOX4QF9X2rk5ELUyHOt4MFNdV10xuI16UTe7SC/Nm+hHVX02Kt5DY90PsdOAq7qv2oXFcZCl8aW92D5hs69BHJN/yMC7XflrUTwt4iP0tY8RLfLurgBp0kKwQxysh32BB8W1VqMpzzN//EHLabClXBJ+hQ5UJRHPLOY6k4u3Q== reyserrano@Rey-Serranos-MacBook-Pro-2.local"
+	],
+      "password": "FpMX5sieVjBhE",
+      "groups": "dev",
+      "uid": 3110,
+      "gid": 3110,
+      "name": "Rey Serrano",
+      "shell": "\/bin\/bash",
+      "comment": "ChooChee UI Staff",
+      "nagios": {
+        "email": "nobody@choochee.com"
+      }
+    }
