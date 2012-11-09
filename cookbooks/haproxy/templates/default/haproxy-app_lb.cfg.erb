@@ -1,12 +1,12 @@
 global
         log 127.0.0.1   local0
         log 127.0.0.1   local1 notice
-        #log loghost    local0 info
-        maxconn 4096
-        #debug
-        #quiet
+        maxconn 32000
         user haproxy
         group haproxy
+	daemon
+	ulimit-n 65536
+	nopoll
 
 defaults
         log     global
@@ -15,10 +15,10 @@ defaults
         option  dontlognull
         retries 3
         option redispatch
-        maxconn 2000
-        contimeout      5000
-        clitimeout      50000
-        srvtimeout      50000
+        maxconn 2408
+        contimeout      30000
+        clitimeout      60000
+        srvtimeout      30000
         <% if node["haproxy"]["x_forwarded_for"] -%>
         option httpclose
         option forwardfor
