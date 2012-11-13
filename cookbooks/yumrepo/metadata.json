@@ -1,0 +1,47 @@
+{
+  "name": "yumrepo",
+  "description": "Installs and configures EPEL, ELFF, Dell, and VMware yum repositories.",
+  "long_description": "# Yumrepo [![Build Status](https://secure.travis-ci.org/atomic-penguin/cookbook-yumrepo.png?branch=master)](http://travis-ci.org/atomic-penguin/cookbook-yumrepo)\n\n## Description\n\nManages Yum Repository files in /etc/yum.repos.d on CentOS / RHEL 5.x.\n\nYum repositories included in this recipe:\nEPEL, ELFF, Dell OMSA, Dell Community, Dell Firmware, VMware Tools, and more...\n\n## Requirements\n\nThis cookbook requires RHEL or CentOS 5.x, and newer.\nIt has not been tested on other platforms.  It probably will\nnot work with RHEL 4 or CentOS 4, especially if you have not\ntaken action to manually install yum on that platform.\n\n## Notes\n-----\n\nRHEL 6 support is fairly well tested in the dell, vmware-tools, and\nepel recipes.  Let me know if you find a platform 6 bug, related to\nany one of the recipes.\n\nThe yumrepo::dell recipe requires Dell manufactured hardware.  This\nrecipe should automatically disable itself if non-Dell hardware is\ndetected by Ohai\n\nA **breaking change in this cookbook is the introduction of an upgrade\nrecipe** for vmware-tools.  Since VMWare does not support upgrades\non their packaged vmware-tools, I created a vmware-tools-upgrade\nrecipe to migrate from vmware-tools 4.1 to 5.0u1.  You should\nensure the yumrepo recipes are not in a base role, until all your nodes\nhave been migrated to 5.0u1.  Due to this incompatibility, vmware-tools\nhas been removed from the default recipe.  If you still need vmware-tools\nfor ESX 4.1, use the previous version of this cookbook 0.15.4.\n\nThe yumrepo::vmware-tools recipe requires a VMWare Virtual Machine.\nThis recipe should automatically disable itself if non-VMWare hardware\nis detected by Ohai.\n\n## Individual Recipe Usage:\n\n### yumrepo::default\n\nIncludes recipes:\n\n* yum::yum\n* epel\n* dell\n\n### yumrepo::epel\n\n- Provides RPM keys and repo file for\n   Fedora EPEL (Extra Packages for Enterprise Linux)\n  * See http://fedoraproject.org/wiki/EPEL for more info\n\n### yumrepo::dell\n\n- Provides repo files for the following Dell repositories.\n  - hardware / Open Manage Server Administrator\n  - community / formerly the software repository\n  - firmware / Convenient but unsupported by Dell\n  * See http://linux.dell.com for more info\n\n- repo[:dell][:download_firmware] = true||false\n  * disables/enables community/firmware repositories in dell recipe\n  * OMSA (hardware) repository will detect Dell hardware platform and\n    enable itself, dynamically. It is not affected by this attribute.\n\n### yumrepo::rbel\n\n- Provides repo files for rbel.frameos.org\n  * Ruby and Opscode Chef packages for RHEL distros \n\n### yumrepo::vmware-tools-upgrade\n\n- Removes vmware-tools for ESX 4.1 installed with this cookbook.\n  Then includes the yumrepo::vmware-tools recipe to re-install\n  VMWare Tools compatiblie with ESX 5.0u1.  *This must be in\n  your run list before the yumrepo::vmware-tools recipe* to\n  successfully upgrade the tools with the recipe.\n\n### yumrepo::vmware-tools\n\n- Uninstalls VMwareTools rpm installed from the\n   VMware ESX \"Install/Upgrade VMware Tools\" menu\n- Uninstalls manually installed vmware-tools\n   packages, the recipe needs to first run\n   vmware-uninstall-tools.pl to use the RPM packages\n   from the repo.\n- Provides RPM keys and repo file for\n   VMware Tools for the ESX 4.1 release\n  * See http://packages.vmware.com for more info\n\n#### Attributes\n\n- repo[:vmware][:release] (ESX version number, default 5.0u1)\n  * This is used to determine the correct URL in the\n    VMware RHEL5/CentOS repository.\n\n### yumrepo::annvix\n\n- Annvix repository for packages usable with Red Hat Enterprise Linux\n  and CentOS.\n  * See http://annvix.org for more information.\n\n### yumrepo::postgresql9\n\n- PostgreSQL 9.0 RPMs\n  * See http://pgrpms.org for more information.\n\n### yumrepo::zenoss\n\n- ZenOss Network Monitoring System\n  * See http://zenoss.org for more information\n\n### yumrepo::corporate\n\n- Generic example recipe to be used with an internal Yum mirror, or\n  repository.\n  * By default this recipe uses the basename of your domain as the\n    repository name.\n\n### yumrepo::jenkins\n\n- Jenkins CI yum repository\n\n## License and Author\n\nAuthor:: Eric G. Wolfe\nCopyright:: 2010-2011\n\nAuthor:: Tippr, Inc.\nCopyright:: 2010\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.\n",
+  "maintainer": "Eric G. Wolfe",
+  "maintainer_email": "wolfe21@marshall.edu",
+  "license": "Apache 2.0",
+  "platforms": {
+    "redhat": ">= 5.0",
+    "centos": ">= 5.0",
+    "scientific": ">= 5.0",
+    "amazon": ">= 5.0",
+    "oracle": ">= 5.0"
+  },
+  "dependencies": {
+    "yum": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "yumrepo::default": "Installs EPEL, and Dell repositories.",
+    "yumrepo::corporate": "Example recipe for deploying rpms from an internal yum.example.com/yum repo",
+    "yumrepo::dell": "Installs Dell OpenManage and optionatlly firmware components.",
+    "yumrepo::epel": "Installs Fedora Extra Packages for Enterprise Linux (EPEL) repository",
+    "yumrepo::elff": "No longer maintained - Deprecated",
+    "yumrepo::rbel": "Ruby and Opschef packages for RHEL",
+    "yumrepo::vmware-tools": "Installs VMware (vmware-tools) repository",
+    "yumrepo::vmware-tools-upgrade": "Upgrades vmware-tools 4.x components to 5.0u1",
+    "yumrepo::annvix": "Annvix repository for packages usable with Red Hat Enterprise Linux and CentOS.",
+    "yumrepo::postgresql9": "PostgreSQL 9.0 RPMs from pgrpms.org",
+    "yumrepo::zenoss": "YUM repo for ZenOss stable",
+    "yumrepo::jenkins": "Jenkins CI"
+  },
+  "version": "0.16.3"
+}
