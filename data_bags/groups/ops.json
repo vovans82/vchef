@@ -2,15 +2,7 @@
     "id"      : "ops",
     "gid"     : 20001,
     "members" : [
-	    "vladimir"
-	   , "shahar"
-	   , "arun"
-	   , "ram"
-           , "marius"
-           , "lootra"
-           , "eggzie"
-           , "alex"
-	   , "alexs"
-           , "karna"
+	    "vsmirnov"
+	   , "pmcbride"
    ]
 }

@@ -1,0 +1,21 @@
+    {
+      "id": "vladimir",
+      "ssh_keys": [
+"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCYipdu9vTglYdHtcm/VdWoCi1M5cQ6kDXasGvnJBwRK8Ptpuc5lM0q1XbktGDjPIxHba54IuomipzOcKPO36LcAUnowA9dyTNNypJkMTTKNq3Oh+V80ZSmszUU1YIzoxQZGUp/kUaFzkjUpwskwYdehhOhJksnppN1hlhNmmDbI/uonh5Y4LVPCA6TcMySeRSwx0viTpEXM6BfuHwP0miRVIZWwbhVQEb7xO6PUy4wkDINI+gOJQIRKhmqHRn8w4zqruD8oA/QIyt5PpFE2oQBDbe8UC3SSw/EPamq9q74qCPnQT9cbWcv7zMMH54NZsT39LU9kcENNupgyih3KK6f pmcbride"
+],
+      "password": "9wb40hUsJgdzQ",
+      "groups": "ops",
+      "uid": 2504,
+      "gid": 2504,
+      "name": "Patrick McBride",
+      "shell": "\/bin\/bash",
+      "comment": "AppDirect Ops Director",
+      "nagios": {
+        "email": "patrick.mcbride@appdirect.com",
+        "mobile": { 
+          "phone": "4157133045",
+          "provider": "verizon" },
+        "on_call": "true"
+
+      }
+    }

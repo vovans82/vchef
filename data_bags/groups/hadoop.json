@@ -1,8 +1,0 @@
-{
-    "id"      : "hadoop",
-    "gid"     : 487,
-    "members" : [
-      "apache",
-      "root"
-   ]
-}

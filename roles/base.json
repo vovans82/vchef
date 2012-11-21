@@ -8,6 +8,7 @@
   },
   "chef_type": "role",
   "run_list": [
+  "recipe[accounts]"
   ],
   "env_run_lists": {
   }

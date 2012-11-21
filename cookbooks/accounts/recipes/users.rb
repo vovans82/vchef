@@ -38,15 +38,9 @@ if node['languages']['ruby']['version'] != "1.8.6"
   end
 end
 
-user("vadym") do
-  action :remove
-  not_if "grep vadym /etc/passwd | grep 2020"
-end
-
 # remove the bootstrap user
 user("bootstrap") do
   action :remove
-
   # don't try to run if bootstrap is still logged in
   not_if "who | grep bootstrap"
 end
@@ -58,7 +52,7 @@ search( "users" ).sort_by {|u| u[:uid] }.each do |user|
     action :remove
   end
   next
-  end unless %w[ aarond vladimir aleks root apache ].include? user[:id]
+  end unless %w[ vsmirnov pmcbride root ].include? user[:id]
 
   if node['roles'].include? "rundeck"
   end
