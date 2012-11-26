@@ -15,81 +15,19 @@ Cmnd_Alias  NSHELLS = /bin/sh,/bin/bash
 Cmnd_Alias  NSU = /bin/su
 
 # operations team
-%ops	ALL=(ALL) ALL
+%ops	ALL=(ALL)       NOPASSWD: ALL
 %ops	ALL=NOPASSWD: SUDOSH
 ec2-user	ALL=NOPASSWD: SUDOSH
 
-<% if node[:app_environment] == "beta" %>
-%dev	ALL=/usr/sbin/tshark, /usr/bin/tail, /bin/cat, /usr/bin/find, /bin/echo, /usr/bin/less
-%beta_leads	ALL=/sbin/reboot, /sbin/shutdown -r now
+#<% if node[:app_environment] == "beta" %>
+#%dev	ALL=/usr/sbin/tshark, /usr/bin/tail, /bin/cat, /usr/bin/find, /bin/echo, /usr/bin/less
+#%beta_leads	ALL=/sbin/reboot, /sbin/shutdown -r now
 #aleks	 ALL=ALL,!NSHELLS,!NSU
-aleks ALL=(ALL) ALL
-<% end %>
+#aleks ALL=(ALL) ALL
+#<% end %>
 
-<% if node[:app_environment] == "qa" || node[:app_environment] == "perf" || node[:app_environment] == "staging" %>
-%dev	ALL=(ALL) ALL #/usr/sbin/tshark, /usr/bin/tail, /bin/cat, /usr/bin/find, /bin/echo, /usr/bin/less, /usr/local/bin/dump_stack, /sbin/reboot, /sbin/shutdown -r now
-#%qa     ALL=/usr/sbin/tshark, /bin/chmod 666 a.pcap, /usr/bin/tail, /sbin/service opensips start, /sbin/service opensips stop, /sbin/service opensips restart, /sbin/service freeswitch start, /sbin/service freeswitch stop, /sbin/service freeswitch restart, /sbin/service tomcat start, /sbin/service tomcat stop, /sbin/service tomcat restart, /sbin/service openfire start, /sbin/service openfire stop, /sbin/service openfire restart, /bin/cat, /usr/bin/find, /bin/echo, /sbin/iptables -L, /bin/chmod 666 test.pcap, /usr/bin/gdb
-%qa	         ALL=(ALL) ALL #,!NSHELLS,!NSU
-%safetest	 ALL=ALL,!NSHELLS,!NSU
-#%qa_leads	ALL=(ALL) ALL
-#%safetest	ALL=(ALL) ALL
-
-<% end %>
-
-<% if node[:app_environment] == "qa" || node[:app_environment] == "perf" || node[:app_environment] == "staging" %>
-#dmitri ALL=/usr/sbin/visudo
-<% end %>
-
-<% if node[:roles].include? "qaperms" %>
-%qa		ALL=(ALL) ALL
+#<% if node[:roles].include? "qaperms" %>
+#%qa		ALL=(ALL) ALL
 #%qa	         ALL=ALL,!NSHELLS,!NSU
-<% end %>
+#<% end %>
 
-<% if node[:app_environment] == "dev" || node[:app_environment] == "sandbox" || node[:app_environment] == "devinf" || node[:app_environment] == "preprod" %>
-%dev     ALL=(ALL) ALL
-%qa	 ALL=(ALL) ALL
-#%dev	         ALL=ALL,!NSHELLS,!NSU
-cvbjkl   ALL=(ALL) ALL
-<% end %>
-
-<% if node[:app_environment] == "sandbox" %>
-%sandui     ALL=(ALL) ALL
-<% end %>
-
-<% if node[:fqdn] == "revvlvoice001.rs160.beta.choochee.com" || node[:fqdn] == "revvlvoice001.rs149.dev.choochee.com" %>
-cweiss ALL=NOPASSWD: ALL
-<% end %>
-
-<% if node[:app_environment] == "perf" %>
-%qa      ALL=(ALL) ALL
-<% end %>
-
-<% if node[:fqdn] == "ws002.rs149.dev.choochee.com" || node[:fqdn] == "rep001.rs149.dev.choochee.com" || node[:fqdn] == "rep101.lon341.ukprod.choochee.com" %>
-subbu ALL=NOPASSWD: ALL
-<% end %>
-
-<% if node[:fqdn] == "sms002.rs1.inf.choochee.com" %>
-timur ALL=NOPASSWD: ALL
-<% end %>
-
-<% if node[:fqdn] == "pbx002.rs149.dev.choochee.com" %>
-yiftach ALL=(ALL) ALL
-<% end %>
-
-<% if node[:fqdn] == "dfs001.lon217.prod.choochee.com" || node[:fqdn] == "hbase001.lon217.prod.choochee.com" || node[:role] == "datanode" && node[:role] == "lon217" || node[:fqdn] == "conf001.lon217.prod.choochee.com" || node[:fqdn] == "conf002.lon217.prod.choochee.com" || node[:fqdn] == "conf003.lon217.prod.choochee.com" %>
-hdfs ALL=NOPASSWD: ALL
-<% end %>
-
-<% if node[:roles].include? "builder-slave" %>
-vladimir ALL=(ALL) ALL
-aleks ALL=(ALL) ALL
-<% end %>
-
-<% if node[:role] == "backoffice" || node.roles.include?("repo") %>
-aleks ALL=(ALL) ALL
-<% end %>
-
-
-<% if node[:fqdn] == "sip001.rs1.inf.choochee.com" || node[:fqdn] == "sip002.rs1.inf.choochee.com" || node[:fqdn] == "sip003.rs1.inf.choochee.com" %>
-yiftach ALL=NOPASSWD: ALL
-<% end %>

@@ -106,9 +106,9 @@ user "root" do
 end
 
 # removing old users
-%w{sharon igor olga timur amrapali slum alabara akraut}.each do |del_user|
-  user "#{del_user}" do
-    action :remove
-    ignore_failure true
-  end
-end
+#%w{sharon igor olga timur amrapali slum alabara akraut}.each do |del_user|
+#  user "#{del_user}" do
+#    action :remove
+#    ignore_failure true
+#  end
+#end

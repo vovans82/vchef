@@ -25,23 +25,6 @@ template "/etc/sudoers" do
   mode  0440
 end
 
-#sudosh2_version="sudosh2-1.0.4"
-
-#script "sudosh2" do
-#    not_if {FileTest.exists?("/usr/local/bin/sudosh")}
-#    interpreter "bash"
-#    user "root"
-#    cwd "/root"
-#    code <<-EOF
-#    cd /root
-#    wget http://repo.choochee.com/archive/sudosh2-1.0.4.tbz2 -O #{sudosh2_version}.tbz2
-#    tar xjvf #{sudosh2_version}.tbz2
-#    cd #{sudosh2_version}
-#    ./configure | tee configure.out
-#    make && make install | tee make.out
-#    EOF
-#end
-
 package "sudosh2" do
     action :install
     not_if ("rpm -q sudosh2")
