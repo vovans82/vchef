@@ -24,9 +24,3 @@ template "/etc/sudoers" do
   group "root"
   mode  0440
 end
-
-package "sudosh2" do
-    action :install
-    not_if ("rpm -q sudosh2")
-    ignore_failure true
-end
