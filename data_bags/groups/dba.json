@@ -1,4 +1,7 @@
 {
       "id": "dba",
-      "gid": 2003
+      "gid": 2003,
+      "members" : [
+	    "eoneill"
+   ]
     }

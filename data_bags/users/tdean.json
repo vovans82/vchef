@@ -1,0 +1,21 @@
+    {
+      "id": "tdean",
+      "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC9MVQNEcgWA5taa/bDJoZD+UR1VJsFuuYBPXDdCU0FFvfq4afka3YBnL7kdAiskbH4PY5kGj0LOXNEOZvMj1MJ1g2s8XGtULKBOLLn/bbJDko9ll8gozdWNiYtyLFKJv1W92vf2uiPC44VUcdq7bbbXLWLvHoVTpOY/7u/DrvuLuHl7L9I+tgnkEtzYA+7F98K+/ZTzYuxGQtduqShYlPQIGauoFm9GRK3BLNQDFBxKF+eiQHZiklUrSNZI5skCmJLDBKBQwW9PHML0Wrfl3KOf0uWt7wDmA9kpJbDKXk8Rdo4fI6dlJxi6Ky6WGi+El4S1GpbZjPIhwilliVAV8YgODsNgSg0B1ncDrtF8Kc2XyprYVLd/vesBzUYS+HRbx4LTjTD9hqZNgi68Hg1Y3iTmsN5Bgq+kV/3ztRpc5EvG/frd49IiAzO1alWqqBVrffQzUpyTEMSbErHa9gL9H24qwG4TpPqVNxadCfCzk51rySPchA4gYgOfQVKxBO3iNc7ngxZJiu1oANsez4tQ77InYrc/xWLGlUOBC4J7IrvtMFtwBevoX/s3P6td+XDLmMYryK/+qmalL2zNFeSbKsx21aEjruwif9MF4ggNjbr8KVTR2PrQdmDzvf9nuZrm/3B8Kpjkfa2GogGjEMIrTzZBB6JmzbpwcXdmvFAHUBEpw== tdean"
+	],
+      "password": "",
+      "groups": "ops",
+      "uid": 2505,
+      "gid": 2505,
+      "name": "Tim Dean",
+      "shell": "\/bin\/bash",
+      "comment": "AppDirect Ops",
+      "nagios": {
+        "email": "tim.dean@appdirect.com",
+        "mobile": { 
+          "phone": "4155681514",
+          "provider": "att" },
+        "on_call": "true"
+
+      }
+    }
