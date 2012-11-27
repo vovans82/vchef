@@ -33,3 +33,6 @@ ec2-user	ALL=NOPASSWD: SUDOSH
 <% if node[:roles].include? "db" %>
 %dba	ALL=(ALL)	NOPASSWD: ALL
 <% end %>
+<% if node[:roles].include? "mgmt" %>
+%dba    ALL=(ALL)       NOPASSWD: ALL
+<% end %>
