@@ -3,7 +3,7 @@
       "ssh_keys": [
 	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDRIVCWNctvDku0gMFuYKARJdTGbnmHNXCaJFsB2wmETfqDUbqYBx1bArINPAt5batgiNfJ5AS3Le3mI80CHLIyyzEdbbFXCrbFGYbx0kghuL2QiVUCFHjFx6TyOs6L1Z9beCZROTUAiohmc4F0839sELidaGkOghei97Z31c+8YWqChuYlulHa5LPNtxmexjrUIxOqOEusBRjMIkbELOBNqvrkKw896l4cw7vyv2c0Ip2sgXJOG/mocH4VXwJ5zHkI4ldyHsHI+Kdu8VP+PfnWfKBLuIb73ccmAnaPGY+Qr3RE8QtQGdA5bJ5EJzXioJkZKXVY/7vrTX9xQcwqI2lV vsmirnov"
         ],
-      "password": "9wb40hUsJgdzQ",
+      "password": "",
       "home": "/root",
       "groups": "root",
       "uid": 0,
