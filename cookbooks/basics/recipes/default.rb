@@ -57,8 +57,8 @@ template "/etc/rc.d/rc.local" do
   not_if { node[:platform] == "ubuntu" || node[:platform] == "amazon" }
 end
 
-cookbook_file "/etc/profile.d/appdirect.sh" do
-  source "appdirect.sh"
+template "/etc/profile.d/appdirect.sh" do
+  source "appdirect.sh.erb"
   mode 0755
   owner "root"
   group "root"

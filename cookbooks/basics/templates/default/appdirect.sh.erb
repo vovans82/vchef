@@ -11,9 +11,9 @@ NORMAL='\[\e[0;39m\]'
 
 
 if [ $UID -eq 0 ] ; then
-  PS1=''"${NORMAL}"'['"${RED}"'\t'"${NORMAL}"']['"${YELLOW}"'\u'"${BLUE}"'@'"${YELLOW}"'<%= node[:hostname] + "." + node[:deployment_id] + "." + node[:app_environment] %>'"${NORMAL}"']['"${CYAN}"'${PWD}'"${NORMAL}"']'"${NORMAL}"' # '
+  PS1=''"${NORMAL}"'['"${RED}"'\t'"${NORMAL}"']['"${YELLOW}"'\u'"${BLUE}"'@'"${YELLOW}"'<%= node[:hostname] %>'"${NORMAL}"']['"${CYAN}"'${PWD}'"${NORMAL}"']'"${NORMAL}"' # '
 else
-  PS1=''"${NORMAL}"'['"${RED}"'\t'"${NORMAL}"']['"${YELLOW}"'\u'"${BLUE}"'@'"${YELLOW}"'<%= node[:hostname] + "." + node[:deployment_id] + "." + node[:app_environment] %>'"${NORMAL}"']['"${CYAN}"'${PWD}'"${NORMAL}"']'"${NORMAL}"' $ '
+  PS1=''"${NORMAL}"'['"${RED}"'\t'"${NORMAL}"']['"${YELLOW}"'\u'"${BLUE}"'@'"${YELLOW}"'<%= node[:hostname] %>'"${NORMAL}"']['"${CYAN}"'${PWD}'"${NORMAL}"']'"${NORMAL}"' $ '
 fi
 
 export PS1

@@ -1,13 +1,13 @@
     {
       "id": "eoneill",
       "ssh_keys": [
-        "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAqT6Ozae+J++zTg/EYx9yhG2PgwpXqW5MY6LoDwdEjn41NZG6iKEn8ZcDSR6Q/sNCDpS7oQnS00WNL2Fdj5bx7QBJgViCWR0EBnVIkF+PkyVGfc146h8BolwETixeFo4aV4k0lOP/vNqn/jCycx/vl8j3jaEg2ZmTwaIkbrAuulZgVhbX4xPZ1MKB6Bv7bblzpuQ1LLFe0KbTBF2MY8Y+Bw6vNrH7I85ZfvVitpWP+jorh/R8UkLfe1hwD9VXusvXdDWaTnZRRH4RmscPIpkmxZpwaQfhxDvPe5QX3U3qDUODijDpKLjfBMeu6zOgRb7X0eR5fm80aNyhXeBaHLaJLw== arun@macbook.choochee.com"
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDZyGooXFSNit0feb2M7e82ad089yFMS2fekl8neJOLyePwQmOEghVc3DxxFMdaO6brt+4mvZkQB4GGEEA9aJenzodtThONHxvLE4moFZp/kbdNR1kHZEKHjlIwWu5HKeraFON4LlIS9ge+KA4Y5FRUnX2cNp8loVH+drt+tSE6NWMK4rh93bgMAfVWA+76Y1cTJkYOxXKmDoyjaWe7gzzU5jjJx6FRLgja2wVkqXeQ/CrvvAi47UCGFN42lIEyC28r6/G9/aG1LXuEy/1G8N/8GWV/NFF0Ld/p7c9Y6FkOpLx1x/Rn1MYmhcLsFcN8BYfHai4Tq+Gp1ssphZd59kKp eoneill"
         ],
-      "password": "vgvhAOAxG9EFI",
+      "password": "",
       "groups": "dba",
       "uid": 2508,
       "gid": 2508,
-      "name": "Erin O'Neill",
+      "name": "Erin ONeill",
       "shell": "\/bin\/bash",
       "comment": "AppDirect DBA",
       "nagios": {
