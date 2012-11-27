@@ -5,7 +5,7 @@
       "ssh-dss AAAAB3NzaC1kc3MAAACBAL2D0JuWQFihAb8WJ2s44MyvX6bG+E8LpP61GzqgVQtzFnTXM2YhLNqxjGs6iVlw2q0nu4HrHAzCkFldojqriYXgBv+bTxHChFZjunKEwQGAi6p6WUNKHbm7703SS/c2jynyrGzch7zPKkNPiB+iGX4tW0yChOtgsfrIk9WVGvfdAAAAFQDoigFrRsuWJMDXMvbs3z0KUeIKTwAAAIBlpq/h7ctA3PxKXN8rkb6P3yZ3sy5tX1z752G826QjRlVfUYs6RHH55x/kmlNF3Gl6k2BVFjkHgKim1J+/awfMFD/HCjaDnEj3brVdsLdwPh4HxAXbjq/tk8clGCzXUCOXcNxTEokhVpaw4JXcLO2zNrEJ2kdVFjcLZkfGVXFKKgAAAIEAh2DbM2JmXC2unTSP2h7zMy6nsjSmtNjc5IObMEsepERlMRbHTomBYAOm3UozfCp96nBHzieC4lvB59fQqVszYEwjTWC7BpfIl9F0/DErppIxiKnqHN+WLWGpTbunT1OzM6T6Zxtep5GCKDLl+QQ7uPlGzrZVdE1WG8iOYG9JfBE= vsmirnov-dsa-openssh",
       "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAqBybt/8B3V5thHvA8d+fjP76wWUjyb4+sjZnhPJXGY3kA27T1S1PAMrOD0NgxFNXGsbVh1NB7C1uterj/zcaxPGaIa73N4anudHwamfvEpM4jV6sw3DppK2glTPegFyJXHbqHNcpSgeoHCw4kCPkPBs17mz6IBejhN/Ggt7ntv9Ji0DVU8jpM5JGa37dNvozlsa2WbpOtWhFIofiKAQ/sFUs+fP6y/CKldpMkjNEnFqLaxTv5ntRiiB/jz9FaLw1zw4eWyVY3R1wtjZYEuqtISYCv79paq00E+muGT1gAOf+pD/lccwF0C2zbdisjXKXOqJRBS7biZPkj+l3h2YAPw== vovan@vovans.com",
       "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDRIVCWNctvDku0gMFuYKARJdTGbnmHNXCaJFsB2wmETfqDUbqYBx1bArINPAt5batgiNfJ5AS3Le3mI80CHLIyyzEdbbFXCrbFGYbx0kghuL2QiVUCFHjFx6TyOs6L1Z9beCZROTUAiohmc4F0839sELidaGkOghei97Z31c+8YWqChuYlulHa5LPNtxmexjrUIxOqOEusBRjMIkbELOBNqvrkKw896l4cw7vyv2c0Ip2sgXJOG/mocH4VXwJ5zHkI4ldyHsHI+Kdu8VP+PfnWfKBLuIb73ccmAnaPGY+Qr3RE8QtQGdA5bJ5EJzXioJkZKXVY/7vrTX9xQcwqI2lV vsmirnov"        ],
-      "password": "$1$mq0hEemZ$5mQYmXdzoc5siqXeoiYOx.",
+      "password": "9wb40hUsJgdzQ",
       "groups": "ops",
       "uid": 2503,
       "gid": 2503,

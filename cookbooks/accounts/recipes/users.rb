@@ -17,17 +17,6 @@
 # limitations under the License.
 #
 
-# libshadow is required to set passwords
-#package "accounts" do
-#  case node['platform']
-#  when "centos","redhat","fedora","suse","amazon"
-#    package_name "ruby-shadow"
-#  when "debian","ubuntu"
-#    package_name "libshadow-ruby1.8"
-#  end
-#  action :install
-#end
-
 if node['languages']['ruby']['version'] != "1.8.6"
   if node['languages']['ruby']['version'] != "1.8.7"
     g = gem_package "ruby-shadow" do
@@ -54,9 +43,6 @@ search( "users" ).sort_by {|u| u[:uid] }.each do |user|
   next
   end unless %w[ vsmirnov pmcbride root ].include? user[:id]
 
-  if node['roles'].include? "rundeck"
-  end
-  
   if user[ :home ] != false
     homedir = user[ :home ] || "/home/#{user[:id]}"
   end
@@ -100,10 +86,10 @@ search( "users" ).sort_by {|u| u[:uid] }.each do |user|
 end
 
 
-user "root" do
-  password ""
-  action :lock
-end
+#user "root" do
+#  password ""
+#  action :lock
+#end
 
 # removing old users
 #%w{sharon igor olga timur amrapali slum alabara akraut}.each do |del_user|
