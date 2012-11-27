@@ -24,21 +24,6 @@ directory "/root/scripts" do
   action :create
 end
 
-template "/root/scripts/mysql_server_backup.sh" do
-        source "mysql_server_backup.sh"
-        owner "root"
-        group "root"
-        mode 0744
-end
-
-if node[:fqdn] == "pmm001.rs116.prod.choochee.com" || node[:fqdn] == "pmm001.lon343.prod.choochee.com"
-        cron "mysql_server_backup" do
-                command "/root/scripts/mysql_server_backup.sh > /dev/null 2>&1"
-                minute "00"
-                hour "01"
-        end
-end
-
 if node[:platform] == "ubuntu"
 packages = %w[
 	dstat dnsutils gdb htop lsof mlocate screen socat strace telnet traceroute
@@ -64,52 +49,6 @@ if node[:platform] == "ubuntu"
   package "alien"
 end
 
-###Chef::Log.info("PLATFORM:"+node[:platform]+":PLATFORM")
-
-###if node[:cloud] != nil && node[:platform] != "amazon"
-cookbook_file "/usr/local/bin/wm_gw.sh" do
-  source "wm_gw.sh"
-  mode   "0647"
-
-end
-
-
-
-if node[:location] == "LON"
-	cookbook_file "/usr/local/bin/gw.txt" do
-  		source "LON_gateways.txt"
-  		mode "0644"
-	end
-else 
-	if node[:app_environment]  == "prod" || node[:app_environment] == "beta"
-  		cookbook_file "/usr/local/bin/gw.txt" do
-               	 	source "ORD1_gatways.txt"
-              	  	mode "0644"
-        	end
-	else 
-                cookbook_file "/usr/local/bin/gw.txt" do
-                        source "ORD_N_gatways.txt"
-                        mode "0644"
-                end
-	end
-end
-
-if node.roles.include?("gateway") || node.roles.include?("global_proxy")
-Chef::Log.info "I don't need wm_gw.sh script run"
-else
-	execute "wm_gw.sh" do
-    	command "/usr/local/bin/wm_gw.sh"
-    	action :run
-	end
-end
-
-if node[:platform] == "amazon"
-  execute "install git" do
-    command "yum install git --disablerepo=choochee-custom"
-    action :run
-  end
-end
-
 template "/etc/rc.d/rc.local" do
   source "rc.local.erb"
   owner "root"
@@ -118,14 +57,21 @@ template "/etc/rc.d/rc.local" do
   not_if { node[:platform] == "ubuntu" || node[:platform] == "amazon" }
 end
 
-template "/etc/profile.d/choochee.sh" do
-  source "choochee.sh.erb"
+cookbook_file "/etc/profile.d/appdirect.sh" do
+  source "appdirect.sh"
+  mode 0755
   owner "root"
   group "root"
-  mode "0755"
-  ignore_failure true
-  not_if { node[:platform] == "ubuntu" }
 end
+
+#template "/etc/profile.d/appdirect.sh" do
+#  source "appdirect.sh.erb"
+#  owner "root"
+#  group "root"
+#  mode "0755"
+#  ignore_failure true
+#  not_if { node[:platform] == "ubuntu" }
+#end
 
 file "/etc/chef/first-boot.json" do
   action :delete

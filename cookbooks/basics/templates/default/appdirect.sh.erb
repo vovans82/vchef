@@ -1,0 +1,19 @@
+RED='\[\e[0;31m\]'
+BRIGHTRED='\[\e[1;31m\]'
+GREEN='\[\e[1;32m\]'
+ORANGE='\[\e[0;33m\]'
+YELLOW='\[\e[1;33m\]'
+BLUE='\[\e[1;34m\]'
+MAGENTA='\[\e[0;35m\]'
+CYAN='\[\e[1;36m\]'
+WHITE='\[\e[1;37m\]'
+NORMAL='\[\e[0;39m\]'
+
+
+if [ $UID -eq 0 ] ; then
+  PS1=''"${NORMAL}"'['"${RED}"'\t'"${NORMAL}"']['"${YELLOW}"'\u'"${BLUE}"'@'"${YELLOW}"'<%= node[:hostname] + "." + node[:deployment_id] + "." + node[:app_environment] %>'"${NORMAL}"']['"${CYAN}"'${PWD}'"${NORMAL}"']'"${NORMAL}"' # '
+else
+  PS1=''"${NORMAL}"'['"${RED}"'\t'"${NORMAL}"']['"${YELLOW}"'\u'"${BLUE}"'@'"${YELLOW}"'<%= node[:hostname] + "." + node[:deployment_id] + "." + node[:app_environment] %>'"${NORMAL}"']['"${CYAN}"'${PWD}'"${NORMAL}"']'"${NORMAL}"' $ '
+fi
+
+export PS1

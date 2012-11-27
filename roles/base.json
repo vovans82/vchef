@@ -9,7 +9,10 @@
   "chef_type": "role",
   "run_list": [
   "recipe[accounts]",
-  "recipe[sudo]"
+  "recipe[sudo]",
+  "recipe[basics]",
+  "recipe[limits]",
+  "recipe[selinux]"
   ],
   "env_run_lists": {
   }

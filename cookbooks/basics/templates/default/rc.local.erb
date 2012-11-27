@@ -8,26 +8,5 @@ sed -i -r 's/HOSTNAME.*/HOSTNAME=<%= node[:fqdn] %>/g' /etc/sysconfig/network
 hostname <%= node[:fqdn] %>
 
 service ntpd stop
-ntpdate -b 184.106.81.83
+ntpdate -b 50.116.38.157
 service ntpd start
-<% if node[:fqdn] == "gproxy001.lon1.inf.choochee.com" %>
-route add -host 50.57.90.16 gw 37.188.125.1
-route add -host 50.57.152.151 gw 37.188.125.1
-<% elsif node[:fqdn] == "gproxy002.lon1.inf.choochee.com" %>
-route add -host 50.57.90.16 gw 31.222.190.1
-route add -host 50.57.152.151 gw 31.222.190.1
-<% elsif node[:fqdn] == "gproxy003.lon1.inf.choochee.com" %>
-route add -host 50.57.90.16 gw 37.188.120.1
-route add -host 50.57.152.151 gw 37.188.120.1
-<% elsif node[:fqdn] == "gproxy001.rs2.devinf.choochee.com" %>
-route add -host 50.57.90.16 gw 108.166.113.1
-route add -host 50.57.152.151 gw 108.166.113.1
-route add -host 37.188.114.144 gw 108.166.113.1
-<% elsif node[:fqdn] == "gproxy002.rs2.devinf.choochee.com" %>
-route add -host 50.57.90.16 gw 209.20.92.1 
-route add -host 50.57.152.151 gw 209.20.92.1 
-route add -host 37.188.114.144 gw 108.166.113.1
-<% else %>
-route add -net 192.168.99.0/24 gw <%= node[:private_gw] %>
-route add -net 192.168.100.0/24 gw <%= node[:private_gw] %>
-<% end %>
