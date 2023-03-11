@@ -30,7 +30,7 @@ GEM
       erubis
       gherkin (~> 2.11.1)
       gist (~> 3.1.0)
-      nokogiri (= 1.5.0)
+      nokogiri (= 1.14.2)
       pry (~> 0.9.8.4)
       rak (~> 1.4)
       treetop (~> 1.4.10)
